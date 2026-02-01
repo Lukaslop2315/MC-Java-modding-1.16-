@@ -62,7 +62,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
         this.repairIngredient = repairIngredient;
     }
     //getters
-    @Override  //@Override = "I'm REPLACING how SwordItem does this"
+    @Override  //@Override = "I'm REPLACING how this original minecraft Item does this does this"
     public int getDurabilityForSlot(EquipmentSlotType slotType) {
         return HEALTH_PER_SLOT[slotType.getIndex()] * this.durabilityMultiplier;        // for durability  HEALTH_PER_SLOT = new int[]{13, 15, 16, 11}; * durability multiplier
     }
